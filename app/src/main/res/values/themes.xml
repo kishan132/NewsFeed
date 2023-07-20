@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NewsFeed" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="colorOnPrimary">@color/yellow</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:titleTextColor">@color/black</item>
+        <item name="android:subtitleTextColor">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.NewsFeed.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NewsFeed.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NewsFeed.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="SplashTheme" parent="Theme.NewsFeed">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/news_icon</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="CustomToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <!-- Set the title text color -->
+        <item name="android:titleTextAppearance">@style/CustomToolbarTitleText</item>
+        <!-- Set the subtitle text color -->
+        <item name="android:subtitleTextAppearance">@style/CustomToolbarSubtitleText</item>
+    </style>
+
+    <!-- Define a custom style for the title text -->
+    <style name="CustomToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/black</item>
+        <!-- You can also set other text-related attributes here if needed -->
+    </style>
+
+    <!-- Define a custom style for the subtitle text -->
+    <style name="CustomToolbarSubtitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/black</item>
+        <!-- You can also set other text-related attributes here if needed -->
+    </style>
+
+
+</resources>
